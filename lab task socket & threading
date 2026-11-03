@@ -1,0 +1,115 @@
+#import socket
+#name = socket.gethostname()
+#print(name)
+
+#domain >>id adressfind
+#import socket
+#a="www.google.com"
+#name = socket.gethostbyname
+#print(name)
+
+from concurrent.futures import thread
+
+#Single thread
+#import time
+#print("Hii")
+#time.sleep(5)
+#print("joyy")
+
+#import threading
+#without threading
+#import time
+#def play1():
+#    for i in range(5):
+#        print("play1:",i)
+       # time.sleep(2)
+#def play2():
+#   for i in range(3):
+#        print("play2:",i)
+#play1()
+
+#import threading
+#impor time
+#def backgroud_task():
+#    for i in range(5):
+#        print("backgroud_task runing")
+#        time.sleep(1)
+#t= threading.Thread(target=backgroud_task)
+#t.start()
+#print("main thread finished")
+
+import threading
+import time
+from turtledemo.penrose import start
+
+
+#def task():
+#    while True:
+#        print("task completed")
+#        time.sleep(1)
+#t=threading.Thread(target=task)
+#t.demon = True , t , start
+#print("task over")
+
+
+import socket
+s=socket.socket()
+print("socket successfully created")
+port=9999
+host= socket.gethostname()
+s.bind((host,port))
+print("socket binded to",port)
+s.listen(3)
+print("socket is listening")
+while True:
+    c, addr = s.accept()
+    print("connected from",addr)
+    c.send('Hello World')
+    # import socket
+    # s=socket.socket()
+    # host=socket.gethostname()
+    # port=9999
+    # s.connect((host,port))
+    # print(s.recv(1024).decode())
+    # s.close()
+
+    # import threading
+    # def task():
+    #    print("thread name:",threading.current_thread)
+    # t1= threading.Thread(target=task)
+    # t1.start()
+    # t1.join()
+    # import threading
+    # def task():
+    #    print("Hello!! joy")
+    # for i in range(5):
+    #    t=threading.Thread(target=task)
+    #    t.start()
+    #    t.join()
+    # import threading
+    # import time
+    # def task ():
+    #    time.sleep(5)
+    #    print("Task complete")
+    #    t=threading.Thread(target=task)
+    #    t.join()
+    #    print(t.is_alive())
+    import threading
+
+
+    def func1(name):
+        print("student name:", name)
+
+    t1 = threading.Thread(target=func1, args=(1,))
+    t1.start()
+    t1.join()
+    c.close()
+
+
+
+
+
+
+
+
+

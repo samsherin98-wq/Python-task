@@ -1,0 +1,68 @@
+#exceptional handling
+#try:
+#  a=int(input("enter a number"))
+#    print("number:",a)
+#except:
+#    print("not a number")
+from logging import exception
+
+#try:
+#    x= 10/0
+#    print("division error")
+#except :
+#    print("not a number")
+#try :
+#    a=int(input("enter a number:"))
+#    b=int(input("enter a number:"))
+#    x=a/b
+#except:
+#    print("not anumber")
+#try:
+#     a= "Hii"+5
+#except:
+#     print("cant try this !")
+
+
+#try:
+#    a=[1,2,3,4,5]
+#    print(a[10])
+#except:
+#    print("no index position")
+
+#try:
+#    a= {"name":"joy","course":"py"}
+#    print(a.get(a["age"]))
+#except:
+#    print("not found")
+#file handlinf
+# f=open("student.txt","w")
+#f.write("hii this is python")
+#f.close()
+#print("successfull")
+#f=open("student.txt","r")
+#a=f.read()
+#print(a)
+#f.close()
+#f=open("student.txt","a")
+#f.write("joy")
+#f.close()
+#file handling exceptional()
+#try:
+#    with open ("student.txt","r") as f:
+#        print(f.read())
+#except FileNotFoundError:
+#print("file not found")
+#line by line
+#f= open("student.txt","r")
+#for line in f:
+#    print(line.strip())
+#f.close()
+#with open("student.txt", "w") as file:
+#    file.write("Hello World")
+#with open("student.txt", "r") as file:
+#    print(file.read())
+#count the letter in the file
+#with open("student.txt", "w") as file:
+#    a=file.read()
+#    b=file.strip()
+#    print("total:",len(a))

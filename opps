@@ -1,0 +1,37 @@
+class student:
+#    def fun1(self):
+#     print("Hii")
+#s=student()
+#s.fun1()
+#hiearichal inheritence
+#class Trainer:
+#    def fun1(self):
+#        print("shiny")
+#class joy (Trainer):
+#    def fun2(self):
+#        print("joy")
+#class gowsik (Trainer):
+#    def fun3(self):
+#        print("gowsik")
+#T=Trainer()
+#j=joy()
+#g=gowsik()
+#j.fun1()
+#j.fun2()
+#g.fun3()
+#multiple inheritance
+#class theater:
+#    def fun1(self):
+#        print("need to see movie")
+#class movie (theater):
+#    def fun2(self):
+#        print("jailer 2")
+#class sakthivel(movie):
+#    def fun3(self):
+#        print("watch movie")
+#t = theater()
+#t.fun1()
+#M=movie()
+#M.fun2()
+#S=sakthivel()
+#S.fun3()
